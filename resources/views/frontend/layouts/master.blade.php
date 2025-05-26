@@ -10,6 +10,9 @@
     @yield('css')
 
     <style>
+        .header-image{
+            height: 80px !important;
+        }
         .navmenu .dropdown ul a:hover{
             background-color: #0E3EE3;
             color:#fff !important;
@@ -25,6 +28,11 @@
             @media (max-width: 768px) {
                 .sitename {
                     font-size: 20px !important;
+                }
+            }
+            @media (max-width: 1199px) {
+                .header-image{
+                    height: 55px !important;
                 }
             }
 
