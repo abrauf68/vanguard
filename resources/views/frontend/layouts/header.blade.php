@@ -18,16 +18,38 @@
                 <li class="dropdown">
                     <a href="#"
                         class="{{ request()->routeIs('frontend.services') ? 'active' : '' }}">
-                        <span>Services</span> <i class="fas fa-chevron-down toggle-dropdown"></i>
+                        <span>Car Shipping Services</span> <i class="fas fa-chevron-down toggle-dropdown"></i>
                     </a>
                     <ul>
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('frontend.services') }}"
                                 class="{{ request()->routeIs('frontend.services') && !request()->route('slug') ? 'active' : '' }}">
                                 All Services
                             </a>
-                        </li>
-                        @foreach (\App\Helpers\Helper::getServices() as $service)
+                        </li> --}}
+                        @foreach (\App\Helpers\Helper::getCarShippingServices() as $service)
+                            <li>
+                                <a href="{{ route('frontend.services', $service->slug) }}"
+                                    class="{{ request()->routeIs('frontend.services') && request()->route('slug') == $service->slug ? 'active' : '' }}">
+                                    {{ $service->name }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"
+                        class="{{ request()->routeIs('frontend.services') ? 'active' : '' }}">
+                        <span>Freight & Equipment Hauling</span> <i class="fas fa-chevron-down toggle-dropdown"></i>
+                    </a>
+                    <ul>
+                        {{-- <li>
+                            <a href="{{ route('frontend.services') }}"
+                                class="{{ request()->routeIs('frontend.services') && !request()->route('slug') ? 'active' : '' }}">
+                                All Services
+                            </a>
+                        </li> --}}
+                        @foreach (\App\Helpers\Helper::getFreightServices() as $service)
                             <li>
                                 <a href="{{ route('frontend.services', $service->slug) }}"
                                     class="{{ request()->routeIs('frontend.services') && request()->route('slug') == $service->slug ? 'active' : '' }}">
@@ -38,8 +60,8 @@
                     </ul>
                 </li>
 
-                <li><a href="{{ route('frontend.pricing') }}"
-                        class="{{ request()->routeIs('frontend.pricing') ? 'active' : '' }}">Pricing</a></li>
+                {{-- <li><a href="{{ route('frontend.pricing') }}"
+                        class="{{ request()->routeIs('frontend.pricing') ? 'active' : '' }}">Pricing</a></li> --}}
                 {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i
                             class="fas fa-chevron-down toggle-dropdown"></i></a>
                     <ul>

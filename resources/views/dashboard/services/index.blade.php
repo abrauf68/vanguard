@@ -43,6 +43,7 @@
                         <tr>
                             <th>{{ __('Sr.') }}</th>
                             <th>{{ __('Name') }}</th>
+                            <th>{{ __('Type') }}</th>
                             <th>{{ __('Meta Image') }}</th>
                             <th>{{ __('Created Date') }}</th>
                             <th>{{ __('Status') }}</th>
@@ -54,6 +55,7 @@
                             <tr>
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{ $service->name }}</td>
+                                <td>{{ $service->serviceType->name }}</td>
                                 <td>
                                     @if (isset($service->meta_image))
                                         <img src="{{ asset($service->meta_image) }}" alt="{{ $service->name }}"

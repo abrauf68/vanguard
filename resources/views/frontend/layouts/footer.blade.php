@@ -3,10 +3,10 @@
     <div class="container footer-top">
       <div class="row gy-4">
 
-        <div class="col-lg-5 col-md-12 footer-about">
+        <div class="col-lg-4 col-md-12 footer-about">
           <a href="{{ route('frontend.home') }}" class="logo d-flex align-items-center">
             <img style="height: 80px !important;" src="{{ asset(\App\Helpers\Helper::getLogoLight()) }}" alt="">
-            <span class="sitename">{{\App\Helpers\Helper::getCompanyName()}}</span>
+            {{-- <span class="sitename">{{\App\Helpers\Helper::getCompanyName()}}</span> --}}
           </a>
           <p>{{\App\Helpers\Helper::getCompanyName()}} is your trusted partner for fast, secure, and reliable car transportation nationwide. We handle every shipment with care, ensuring your vehicle arrives in perfect condition.</p>
           <div class="social-links d-flex mt-4">
@@ -37,9 +37,9 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Car Shipping Services</h4>
           <ul>
-            @foreach (\App\Helpers\Helper::getServices() as $service)
+            @foreach (\App\Helpers\Helper::getCarShippingServices() as $service)
                 <li>
                     <a href="{{ route('frontend.services', $service->slug) }}"
                         class="{{ request()->routeIs('frontend.services') && request()->route('slug') == $service->slug ? 'active' : '' }}">
@@ -50,7 +50,21 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Freight & Equipment Hauling</h4>
+          <ul>
+            @foreach (\App\Helpers\Helper::getFreightServices() as $service)
+                <li>
+                    <a href="{{ route('frontend.services', $service->slug) }}"
+                        class="{{ request()->routeIs('frontend.services') && request()->route('slug') == $service->slug ? 'active' : '' }}">
+                        {{ $service->name }}
+                    </a>
+                </li>
+            @endforeach
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-contact text-md-start">
           <h4>Contact Us</h4>
           <p>{{ \App\Helpers\Helper::getCompanyAddress() }}, {{ \App\Helpers\Helper::getCompanyCity() }}<br>{{ \App\Helpers\Helper::getCompanyCountry() }}</p>
           <p class="mt-4"><strong>Phone:</strong> <span>{{ \App\Helpers\Helper::getCompanyPhone() }}</span></p>

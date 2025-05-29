@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\CompanyService;
+use App\Models\ServiceType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -19,7 +20,7 @@ class ServiceController extends Controller
     {
         $this->authorize('view service');
         try {
-            $services = CompanyService::all();
+            $services = CompanyService::with('serviceType')->get();
             return view('dashboard.services.index', compact('services'));
         } catch (\Throwable $th) {
             Log::error('Services Index Failed', ['error' => $th->getMessage()]);
@@ -35,7 +36,8 @@ class ServiceController extends Controller
     {
         $this->authorize('create service');
         try {
-            return view('dashboard.services.create');
+            $serviceTypes = ServiceType::where('is_active', 'active')->get();
+            return view('dashboard.services.create', compact('serviceTypes'));
         } catch (\Throwable $th) {
             Log::error('Services Create Failed', ['error' => $th->getMessage()]);
             return redirect()->back()->with('error', "Something went wrong! Please try again later");
@@ -52,6 +54,7 @@ class ServiceController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'slug' => 'required|string|unique:company_services,slug',
+            'service_type_id' => 'required|exists:service_types,id',
             'meta_title' => 'required|string|max:255',
             'meta_description' => 'required|string|max:255',
             'details' => 'required',
@@ -68,6 +71,7 @@ class ServiceController extends Controller
             $service = new CompanyService();
             $service->name = $request->name;
             $service->slug = $request->slug;
+            $service->service_type_id = $request->service_type_id;
             $service->meta_title = $request->meta_title;
             $service->meta_description = $request->meta_description;
             $service->details = $request->details;
@@ -119,7 +123,8 @@ class ServiceController extends Controller
         $this->authorize('update service');
         try {
             $service = CompanyService::findOrFail($id);
-            return view('dashboard.services.edit', compact('service'));
+            $serviceTypes = ServiceType::where('is_active', 'active')->get();
+            return view('dashboard.services.edit', compact('service','serviceTypes'));
         } catch (\Throwable $th) {
             Log::error('Service Edit Failed', ['error' => $th->getMessage()]);
             return redirect()->back()->with('error', "Something went wrong! Please try again later");
@@ -136,6 +141,7 @@ class ServiceController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'slug' => 'required|string|unique:company_services,slug,' . $id,
+            'service_type_id' => 'required|exists:service_types,id',
             'meta_title' => 'required|string|max:255',
             'meta_description' => 'required|string|max:255',
             'details' => 'required',
@@ -150,6 +156,7 @@ class ServiceController extends Controller
             $service = CompanyService::findOrFail($id);
             $service->name = $request->name;
             $service->slug = $request->slug;
+            $service->service_type_id = $request->service_type_id;
             $service->meta_title = $request->meta_title;
             $service->meta_description = $request->meta_description;
             $service->details = $request->details;

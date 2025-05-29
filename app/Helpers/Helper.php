@@ -127,6 +127,24 @@ class Helper
             return [];
         }
     }
+    public static function getCarShippingServices()
+    {
+        $services = CompanyService::where('is_active', 'active')->where('service_type_id', 1)->get();
+        if (isset($services) && count($services) > 0) {
+            return $services;
+        } else {
+            return [];
+        }
+    }
+    public static function getFreightServices()
+    {
+        $services = CompanyService::where('is_active', 'active')->where('service_type_id', 2)->get();
+        if (isset($services) && count($services) > 0) {
+            return $services;
+        } else {
+            return [];
+        }
+    }
     public static function getTestimonials()
     {
         $testimonials = Testimonial::where('is_active', 'active')->get();

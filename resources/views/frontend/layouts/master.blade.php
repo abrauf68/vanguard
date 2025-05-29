@@ -11,7 +11,7 @@
 
     <style>
         .header-image{
-            height: 80px !important;
+            height: 70px !important;
         }
         .navmenu .dropdown ul a:hover{
             background-color: #0E3EE3;

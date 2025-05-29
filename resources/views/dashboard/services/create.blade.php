@@ -43,7 +43,25 @@
                                 </span>
                             @enderror
                         </div>
-                        <div class="mb-4 col-md-12">
+                        <div class="mb-4 col-md-6">
+                            <label class="form-label" for="service_type_id">{{ __('Service Type') }}</label>
+                            <select id="service_type_id" name="service_type_id" class="select2 form-select @error('service_type_id') is-invalid @enderror">
+                                <option value="" selected disabled>{{ __('Select Service Type') }}</option>
+                                @if (isset($serviceTypes) && count($serviceTypes) > 0)
+                                    @foreach ($serviceTypes as $type)
+                                        <option value="{{ $type->id }}"
+                                            {{ $type->id == old('service_type_id') ? 'selected' : '' }}>{{ $type->name }}
+                                        </option>
+                                    @endforeach
+                                @endif
+                            </select>
+                            @error('service_type_id')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="mb-4 col-md-6">
                             <label for="meta_title" class="form-label">{{ __('Meta Title') }}</label><span
                                 class="text-danger">*</span>
                             <input class="form-control @error('meta_title') is-invalid @enderror" type="text"

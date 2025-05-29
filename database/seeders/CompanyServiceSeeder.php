@@ -18,72 +18,73 @@ class CompanyServiceSeeder extends Seeder
 
             // 1. Car Transportation
             [
+                'service_type_id' => 1,
                 'name' => 'Car Transportation',
                 'slug' => Str::slug('Car Transportation'),
                 'meta_title' => 'Car Transportation Services | Fast, Safe, and Reliable Auto Shipping',
                 'meta_description' => 'Professional car transportation services tailored to your needs. Reliable, fast, and fully insured door-to-door vehicle shipping.',
                 'details' => '<h1 class="" data-start="233" data-end="309">Car Transportation Services | Safe, Reliable, and Nationwide Auto Shipping</h1>
-                <p class="" data-start="311" data-end="717">Looking for a trustworthy and affordable way to transport your car?<br data-start="378" data-end="381">We specialize in <strong data-start="398" data-end="429">car transportation services</strong>, offering <strong data-start="440" data-end="492">safe, efficient, and nationwide vehicle shipping</strong> for both individuals and businesses.<br data-start="529" data-end="532">Whether you\'re <strong data-start="547" data-end="561">relocating</strong>, <strong data-start="563" data-end="584">selling a vehicle</strong>, or need a reliable auto transport solution, our professional network ensures <strong data-start="663" data-end="692">door-to-door car delivery</strong> with care and precision.</p>
-                <hr class="" data-start="719" data-end="722">
-                <h2 class="" data-start="724" data-end="770">Why Choose Our Car Transportation Services?</h2>
-                <h3 class="" data-start="772" data-end="815">1. Door-to-Door Car Pickup and Delivery</h3>
-                <p class="" data-start="816" data-end="1040">We provide <strong data-start="827" data-end="857">door-to-door car transport</strong>, meaning we pick up your vehicle from your location and deliver it right to your chosen destination.<br data-start="958" data-end="961">No terminals, no unnecessary stops &mdash; just <strong data-start="1003" data-end="1039">direct, hassle-free car shipping</strong>.</p>
-                <h3 class="" data-start="1042" data-end="1090">2. Experienced Drivers and Licensed Carriers</h3>
-                <p class="" data-start="1091" data-end="1306">Your vehicle is handled by <strong data-start="1118" data-end="1187">licensed, insured, and highly experienced auto transport carriers</strong>.<br data-start="1188" data-end="1191">Our drivers are trained to ensure safe loading, transit, and unloading, giving your car the protection it deserves.</p>
-                <h3 class="" data-start="1308" data-end="1356">3. Full Insurance Coverage for Every Vehicle</h3>
-                <p class="" data-start="1357" data-end="1538">For your peace of mind, every shipment includes <strong data-start="1405" data-end="1440">full vehicle insurance coverage</strong> during transport.<br data-start="1458" data-end="1461">You can trust that your car is fully protected against any unexpected events.</p>
-                <h3 class="" data-start="1540" data-end="1586">4. Transparent Pricing with No Hidden Fees</h3>
-                <p class="" data-start="1587" data-end="1746">We believe in clear, upfront pricing.<br data-start="1624" data-end="1627">Get a <strong data-start="1633" data-end="1662">free, no-obligation quote</strong> and enjoy <strong data-start="1673" data-end="1707">competitive car shipping rates</strong> with absolutely <strong data-start="1724" data-end="1745">no hidden charges</strong>.</p>
-                <hr class="" data-start="1748" data-end="1751">
-                <h2 class="" data-start="1753" data-end="1785">Our Easy Car Shipping Process</h2>
-                <h3 class="" data-start="1787" data-end="1832">Step 1: Request a Free Car Shipping Quote</h3>
-                <p class="" data-start="1833" data-end="1963">Fill out our quick online form or call us to receive a <strong data-start="1888" data-end="1918">custom car transport quote</strong> based on your pickup and delivery locations.</p>
-                <h3 class="" data-start="1965" data-end="2005">Step 2: Schedule Your Auto Transport</h3>
-                <p class="" data-start="2006" data-end="2101">Once you accept the quote, we\'ll arrange the <strong data-start="2051" data-end="2075">best time for pickup</strong> that suits your schedule.</p>
-                <h3 class="" data-start="2103" data-end="2148">Step 3: Safe Pickup and Vehicle Transport</h3>
-                <p class="" data-start="2149" data-end="2286">Our professional drivers will <strong data-start="2179" data-end="2222">carefully inspect and load your vehicle</strong>, securing it properly for safe transit across cities or states.</p>
-                <h3 class="" data-start="2288" data-end="2325">Step 4: Delivery to Your Doorstep</h3>
-                <p class="" data-start="2326" data-end="2506">Your car is <strong data-start="2338" data-end="2370">delivered safely and on time</strong> to your desired location.<br data-start="2396" data-end="2399">We conduct a final inspection to ensure your vehicle arrives in <strong data-start="2463" data-end="2485">the same condition</strong> as it was picked up.</p>
-                <hr class="" data-start="2508" data-end="2511">
-                <h2 class="" data-start="2513" data-end="2561">Types of Car Transportation Services We Offer</h2>
-                <ul data-start="2563" data-end="2937">
-                <li class="" data-start="2563" data-end="2640">
-                <p class="" data-start="2565" data-end="2640"><strong data-start="2565" data-end="2587">Open Car Transport</strong>: Affordable and secure, ideal for everyday vehicles.</p>
-                </li>
-                <li class="" data-start="2641" data-end="2736">
-                <p class="" data-start="2643" data-end="2736"><strong data-start="2643" data-end="2669">Enclosed Car Transport</strong>: Maximum protection for luxury, vintage, exotic, and classic cars.</p>
-                </li>
-                <li class="" data-start="2737" data-end="2825">
-                <p class="" data-start="2739" data-end="2825"><strong data-start="2739" data-end="2765">Expedited Car Shipping</strong>: Faster pickup and delivery options when time matters most.</p>
-                </li>
-                <li class="" data-start="2826" data-end="2937">
-                <p class="" data-start="2828" data-end="2937"><strong data-start="2828" data-end="2868">Dealer and Auction Vehicle Transport</strong>: Seamless shipping for dealerships, auctions, and individual buyers.</p>
-                </li>
-                </ul>
-                <hr class="" data-start="2939" data-end="2942">
-                <h2 class="" data-start="2944" data-end="2994">Why Customers Trust Our Auto Transport Services</h2>
-                <ul data-start="2996" data-end="3178">
-                <li class="" data-start="2996" data-end="3027">
-                <p class="" data-start="2998" data-end="3027">5-Star Rated Customer Service</p>
-                </li>
-                <li class="" data-start="3028" data-end="3064">
-                <p class="" data-start="3030" data-end="3064">Nationwide Coverage Across the USA</p>
-                </li>
-                <li class="" data-start="3065" data-end="3098">
-                <p class="" data-start="3067" data-end="3098">Competitive Car Shipping Prices</p>
-                </li>
-                <li class="" data-start="3099" data-end="3138">
-                <p class="" data-start="3101" data-end="3138">Real-Time Shipment Tracking Available</p>
-                </li>
-                <li class="" data-start="3139" data-end="3178">
-                <p class="" data-start="3141" data-end="3178">Personalized Solutions for Every Need</p>
-                </li>
-                </ul>
-                <hr class="" data-start="3180" data-end="3183">
-                <h2 class="" data-start="3185" data-end="3228">Stress-Free Car Shipping You Can Rely On</h2>
-                <p class="" data-start="3230" data-end="3466">Let us take the hassle out of transporting your vehicle.<br data-start="3286" data-end="3289">With <strong data-start="3294" data-end="3315">expert car movers</strong>, <strong data-start="3317" data-end="3337">insured carriers</strong>, and a <strong data-start="3345" data-end="3387">proven record of successful deliveries</strong>, we make sure your vehicle gets where it needs to be &mdash; safely and stress-free.</p>
-                <p class="" data-start="3468" data-end="3597"><strong data-start="3468" data-end="3514">Request your free car shipping quote today</strong> and experience the easiest way to move your car across town or across the country!</p>
-            ',
+                    <p class="" data-start="311" data-end="717">Looking for a trustworthy and affordable way to transport your car?<br data-start="378" data-end="381">We specialize in <strong data-start="398" data-end="429">car transportation services</strong>, offering <strong data-start="440" data-end="492">safe, efficient, and nationwide vehicle shipping</strong> for both individuals and businesses.<br data-start="529" data-end="532">Whether you\'re <strong data-start="547" data-end="561">relocating</strong>, <strong data-start="563" data-end="584">selling a vehicle</strong>, or need a reliable auto transport solution, our professional network ensures <strong data-start="663" data-end="692">door-to-door car delivery</strong> with care and precision.</p>
+                    <hr class="" data-start="719" data-end="722">
+                    <h2 class="" data-start="724" data-end="770">Why Choose Our Car Transportation Services?</h2>
+                    <h3 class="" data-start="772" data-end="815">1. Door-to-Door Car Pickup and Delivery</h3>
+                    <p class="" data-start="816" data-end="1040">We provide <strong data-start="827" data-end="857">door-to-door car transport</strong>, meaning we pick up your vehicle from your location and deliver it right to your chosen destination.<br data-start="958" data-end="961">No terminals, no unnecessary stops &mdash; just <strong data-start="1003" data-end="1039">direct, hassle-free car shipping</strong>.</p>
+                    <h3 class="" data-start="1042" data-end="1090">2. Experienced Drivers and Licensed Carriers</h3>
+                    <p class="" data-start="1091" data-end="1306">Your vehicle is handled by <strong data-start="1118" data-end="1187">licensed, insured, and highly experienced auto transport carriers</strong>.<br data-start="1188" data-end="1191">Our drivers are trained to ensure safe loading, transit, and unloading, giving your car the protection it deserves.</p>
+                    <h3 class="" data-start="1308" data-end="1356">3. Full Insurance Coverage for Every Vehicle</h3>
+                    <p class="" data-start="1357" data-end="1538">For your peace of mind, every shipment includes <strong data-start="1405" data-end="1440">full vehicle insurance coverage</strong> during transport.<br data-start="1458" data-end="1461">You can trust that your car is fully protected against any unexpected events.</p>
+                    <h3 class="" data-start="1540" data-end="1586">4. Transparent Pricing with No Hidden Fees</h3>
+                    <p class="" data-start="1587" data-end="1746">We believe in clear, upfront pricing.<br data-start="1624" data-end="1627">Get a <strong data-start="1633" data-end="1662">free, no-obligation quote</strong> and enjoy <strong data-start="1673" data-end="1707">competitive car shipping rates</strong> with absolutely <strong data-start="1724" data-end="1745">no hidden charges</strong>.</p>
+                    <hr class="" data-start="1748" data-end="1751">
+                    <h2 class="" data-start="1753" data-end="1785">Our Easy Car Shipping Process</h2>
+                    <h3 class="" data-start="1787" data-end="1832">Step 1: Request a Free Car Shipping Quote</h3>
+                    <p class="" data-start="1833" data-end="1963">Fill out our quick online form or call us to receive a <strong data-start="1888" data-end="1918">custom car transport quote</strong> based on your pickup and delivery locations.</p>
+                    <h3 class="" data-start="1965" data-end="2005">Step 2: Schedule Your Auto Transport</h3>
+                    <p class="" data-start="2006" data-end="2101">Once you accept the quote, we\'ll arrange the <strong data-start="2051" data-end="2075">best time for pickup</strong> that suits your schedule.</p>
+                    <h3 class="" data-start="2103" data-end="2148">Step 3: Safe Pickup and Vehicle Transport</h3>
+                    <p class="" data-start="2149" data-end="2286">Our professional drivers will <strong data-start="2179" data-end="2222">carefully inspect and load your vehicle</strong>, securing it properly for safe transit across cities or states.</p>
+                    <h3 class="" data-start="2288" data-end="2325">Step 4: Delivery to Your Doorstep</h3>
+                    <p class="" data-start="2326" data-end="2506">Your car is <strong data-start="2338" data-end="2370">delivered safely and on time</strong> to your desired location.<br data-start="2396" data-end="2399">We conduct a final inspection to ensure your vehicle arrives in <strong data-start="2463" data-end="2485">the same condition</strong> as it was picked up.</p>
+                    <hr class="" data-start="2508" data-end="2511">
+                    <h2 class="" data-start="2513" data-end="2561">Types of Car Transportation Services We Offer</h2>
+                    <ul data-start="2563" data-end="2937">
+                    <li class="" data-start="2563" data-end="2640">
+                    <p class="" data-start="2565" data-end="2640"><strong data-start="2565" data-end="2587">Open Car Transport</strong>: Affordable and secure, ideal for everyday vehicles.</p>
+                    </li>
+                    <li class="" data-start="2641" data-end="2736">
+                    <p class="" data-start="2643" data-end="2736"><strong data-start="2643" data-end="2669">Enclosed Car Transport</strong>: Maximum protection for luxury, vintage, exotic, and classic cars.</p>
+                    </li>
+                    <li class="" data-start="2737" data-end="2825">
+                    <p class="" data-start="2739" data-end="2825"><strong data-start="2739" data-end="2765">Expedited Car Shipping</strong>: Faster pickup and delivery options when time matters most.</p>
+                    </li>
+                    <li class="" data-start="2826" data-end="2937">
+                    <p class="" data-start="2828" data-end="2937"><strong data-start="2828" data-end="2868">Dealer and Auction Vehicle Transport</strong>: Seamless shipping for dealerships, auctions, and individual buyers.</p>
+                    </li>
+                    </ul>
+                    <hr class="" data-start="2939" data-end="2942">
+                    <h2 class="" data-start="2944" data-end="2994">Why Customers Trust Our Auto Transport Services</h2>
+                    <ul data-start="2996" data-end="3178">
+                    <li class="" data-start="2996" data-end="3027">
+                    <p class="" data-start="2998" data-end="3027">5-Star Rated Customer Service</p>
+                    </li>
+                    <li class="" data-start="3028" data-end="3064">
+                    <p class="" data-start="3030" data-end="3064">Nationwide Coverage Across the USA</p>
+                    </li>
+                    <li class="" data-start="3065" data-end="3098">
+                    <p class="" data-start="3067" data-end="3098">Competitive Car Shipping Prices</p>
+                    </li>
+                    <li class="" data-start="3099" data-end="3138">
+                    <p class="" data-start="3101" data-end="3138">Real-Time Shipment Tracking Available</p>
+                    </li>
+                    <li class="" data-start="3139" data-end="3178">
+                    <p class="" data-start="3141" data-end="3178">Personalized Solutions for Every Need</p>
+                    </li>
+                    </ul>
+                    <hr class="" data-start="3180" data-end="3183">
+                    <h2 class="" data-start="3185" data-end="3228">Stress-Free Car Shipping You Can Rely On</h2>
+                    <p class="" data-start="3230" data-end="3466">Let us take the hassle out of transporting your vehicle.<br data-start="3286" data-end="3289">With <strong data-start="3294" data-end="3315">expert car movers</strong>, <strong data-start="3317" data-end="3337">insured carriers</strong>, and a <strong data-start="3345" data-end="3387">proven record of successful deliveries</strong>, we make sure your vehicle gets where it needs to be &mdash; safely and stress-free.</p>
+                    <p class="" data-start="3468" data-end="3597"><strong data-start="3468" data-end="3514">Request your free car shipping quote today</strong> and experience the easiest way to move your car across town or across the country!</p>
+                ',
                 'meta_image' => 'uploads/company/services/service1.jpg',
                 'main_image' => 'uploads/company/services/1745655048_main_image.jpg',
                 'created_at' => now(),
@@ -92,6 +93,7 @@ class CompanyServiceSeeder extends Seeder
 
             // 2. Vehicle Storage
             [
+                'service_type_id' => 1,
                 'name' => 'Vehicle Storage',
                 'slug' => Str::slug('Vehicle Storage'),
                 'meta_title' => 'Secure Vehicle Storage Solutions | Short & Long-Term',
@@ -165,6 +167,7 @@ class CompanyServiceSeeder extends Seeder
 
             // 3. Logistics
             [
+                'service_type_id' => 1,
                 'name' => 'Logistics',
                 'slug' => Str::slug('Logistics'),
                 'meta_title' => 'Automotive Logistics Services | End-to-End Vehicle Transport Solutions',
@@ -261,6 +264,7 @@ class CompanyServiceSeeder extends Seeder
 
             // 4. Express Delivery
             [
+                'service_type_id' => 1,
                 'name' => 'Express Delivery',
                 'slug' => Str::slug('Express Delivery'),
                 'meta_title' => 'Express Car Delivery | Fast & Time-Sensitive Auto Transport',
@@ -345,6 +349,7 @@ class CompanyServiceSeeder extends Seeder
 
             // 5. Enclosed Transport
             [
+                'service_type_id' => 1,
                 'name' => 'Enclosed Transport',
                 'slug' => Str::slug('Enclosed Transport'),
                 'meta_title' => 'Enclosed Vehicle Transport | Ultimate Protection for Luxury Cars',
@@ -429,6 +434,7 @@ class CompanyServiceSeeder extends Seeder
 
             // 6. Vehicle Tracking
             [
+                'service_type_id' => 1,
                 'name' => 'Vehicle Tracking',
                 'slug' => Str::slug('Vehicle Tracking'),
                 'meta_title' => 'Real-Time Vehicle Tracking | Monitor Your Shipment 24/7',
@@ -510,6 +516,82 @@ class CompanyServiceSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+
+            // Freight Services
+
+            [
+                'service_type_id' => 2,
+                'name' => 'Heavy Equipment Hauling',
+                'slug' => Str::slug('Heavy Equipment Hauling'),
+                'meta_title' => 'Expert Heavy Equipment Hauling Services – Safe & Reliable Transport',
+                'meta_description' => 'Need to move heavy machinery? Our professional heavy equipment hauling services ensure safe, timely, and secure transport for all types of oversized equipment across the U.S.',
+                'details' => '<h1 class="" data-start="186" data-end="250">Heavy Equipment Hauling</h1>',
+                'meta_image' => 'uploads/company/services/heavy-equipment.jpg',
+                'main_image' => 'uploads/company/services/heavy-haul.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'service_type_id' => 2,
+                'name' => 'General Freight Shipping',
+                'slug' => Str::slug('General Freight Shipping'),
+                'meta_title' => 'Nationwide General Freight Shipping Services – Fast & Affordable',
+                'meta_description' => 'Reliable general freight shipping for businesses and individuals. We offer flexible, cost-effective logistics solutions for all types of cargo—delivered on time, every time.',
+                'details' => '<h1 class="" data-start="186" data-end="250">General Freight Shipping</h1>',
+                'meta_image' => 'uploads/company/services/general-freight.jpg',
+                'main_image' => 'uploads/company/services/general-freight2.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'service_type_id' => 2,
+                'name' => 'Flatbed Trailer Transport',
+                'slug' => Str::slug('Flatbed Trailer Transport'),
+                'meta_title' => 'Flatbed Trailer Transport Services – Oversized Load Experts',
+                'meta_description' => 'Transport large or wide loads with our flatbed trailer services. Ideal for construction materials, machinery, and heavy equipment. Get dependable flatbed hauling today.',
+                'details' => '<h1 class="" data-start="186" data-end="250">Flatbed Trailer Transport</h1>',
+                'meta_image' => 'uploads/company/services/flatted-trailer.jpg',
+                'main_image' => 'uploads/company/services/flatted-trailer2.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'service_type_id' => 2,
+                'name' => 'Oversized Load Services',
+                'slug' => Str::slug('Oversized Load Services'),
+                'meta_title' => 'Oversized Load Transport Services – Permitted & Escorted Loads',
+                'meta_description' => 'Specialized oversized load services with full permitting and escort solutions. Transport heavy and wide cargo safely across state lines with expert handling.',
+                'details' => '<h1 class="" data-start="186" data-end="250">Oversized Load Services</h1>',
+                'meta_image' => 'uploads/company/services/oversized-load.jpg',
+                'main_image' => 'uploads/company/services/oversized-load2.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'service_type_id' => 2,
+                'name' => 'Power Only Transport',
+                'slug' => Str::slug('Power Only Transport'),
+                'meta_title' => 'Power Only Transport Services – Professional Tractor-Only Hauling',
+                'meta_description' => 'Our power only transport service provides licensed drivers and tractors to haul your loaded or empty trailers safely and efficiently nationwide.',
+                'details' => '<h1 class="" data-start="186" data-end="250">Power Only Transport</h1>',
+                'meta_image' => 'uploads/company/services/power-only-trucking.jpg',
+                'main_image' => 'uploads/company/services/power-only-trucking2.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'service_type_id' => 2,
+                'name' => 'RGN/Beam Trailer Transport',
+                'slug' => Str::slug('RGN/Beam Trailer Transport'),
+                'meta_title' => 'RGN & Beam Trailer Transport – Heavy Haul Experts',
+                'meta_description' => 'Move tall or heavy equipment with confidence using RGN and beam trailer transport. Designed for dozers, excavators, and other large construction machinery.',
+                'details' => '<h1 class="" data-start="186" data-end="250">RGN/Beam Trailer Transport</h1>',
+                'meta_image' => 'uploads/company/services/rgn-trailer.jpeg',
+                'main_image' => 'uploads/company/services/rgn-trailer.png',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
 
         ]);
     }
