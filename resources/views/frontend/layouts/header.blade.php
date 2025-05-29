@@ -18,7 +18,7 @@
                 <li class="dropdown">
                     <a href="#"
                         class="{{ request()->routeIs('frontend.services') ? 'active' : '' }}">
-                        <span>Car Shipping Services</span> <i class="fas fa-chevron-down toggle-dropdown"></i>
+                        <span>Freight & Logistics Solutions</span> <i class="fas fa-chevron-down toggle-dropdown"></i>
                     </a>
                     <ul>
                         {{-- <li>
@@ -27,7 +27,7 @@
                                 All Services
                             </a>
                         </li> --}}
-                        @foreach (\App\Helpers\Helper::getCarShippingServices() as $service)
+                        @foreach (\App\Helpers\Helper::getFreightServices() as $service)
                             <li>
                                 <a href="{{ route('frontend.services', $service->slug) }}"
                                     class="{{ request()->routeIs('frontend.services') && request()->route('slug') == $service->slug ? 'active' : '' }}">
@@ -40,7 +40,7 @@
                 <li class="dropdown">
                     <a href="#"
                         class="{{ request()->routeIs('frontend.services') ? 'active' : '' }}">
-                        <span>Freight & Equipment Hauling</span> <i class="fas fa-chevron-down toggle-dropdown"></i>
+                        <span>Vehicle Transportation</span> <i class="fas fa-chevron-down toggle-dropdown"></i>
                     </a>
                     <ul>
                         {{-- <li>
@@ -49,7 +49,7 @@
                                 All Services
                             </a>
                         </li> --}}
-                        @foreach (\App\Helpers\Helper::getFreightServices() as $service)
+                        @foreach (\App\Helpers\Helper::getCarShippingServices() as $service)
                             <li>
                                 <a href="{{ route('frontend.services', $service->slug) }}"
                                     class="{{ request()->routeIs('frontend.services') && request()->route('slug') == $service->slug ? 'active' : '' }}">
@@ -87,7 +87,7 @@
             <i class="mobile-nav-toggle d-xl-none fas fa-bars"></i>
         </nav>
 
-        <a class="btn-getstarted" style="font-size: 12px; white-space: nowrap;" href="{{ route('frontend.get-a-quote') }}">CTA, Get a Quote</a>
+        <a class="btn-getstarted" style="font-size: 12px; white-space: nowrap;" href="{{ route('frontend.get-a-quote') }}">Get a Quote</a>
 
     </div>
 </header>

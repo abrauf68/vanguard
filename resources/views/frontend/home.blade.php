@@ -241,7 +241,7 @@
                             </div>
 
                             <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary">Submit Quote</button>
+                                <button type="submit" class="btn btn-primary">Get a Quote</button>
                             </div>
 
                         </div>
@@ -294,7 +294,7 @@
     @include('frontend.sections.features')
     <!-- /Features Section -->
 
-    @include('frontend.sections.pricing')
+    {{-- @include('frontend.sections.pricing') --}}
     @include('frontend.sections.testimonials')
     @include('frontend.sections.faqs')
     <div data-aos="fade-up" data-aos-delay="200">

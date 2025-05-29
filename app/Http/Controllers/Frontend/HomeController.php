@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function home()
     {
         try {
-            $services = CompanyService::where('is_active', 'active')->get();
+            $services = CompanyService::where('is_active', 'active')->orderBy('service_type_id', 'desc')->get();
             return view('frontend.home', compact('services'));
         } catch (\Throwable $th) {
             Log::error('Home View Failed', ['error' => $th->getMessage()]);
@@ -53,7 +53,7 @@ class HomeController extends Controller
             throw $th;
         }
     }
-    
+
      public function features($slug = null)
     {
         try {
