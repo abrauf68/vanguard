@@ -115,7 +115,7 @@
     <section id="hero" class="hero section dark-background">
 
         <video class="hero-bg" autoplay muted loop playsinline preload="auto">
-            <source src="{{ asset('frontAssets/video/bg_video3.mp4') }}" type="video/mp4">
+            <source src="{{ asset('frontAssets/video/bg_video6.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -127,9 +127,10 @@
         <div class="container">
             <div class="row gy-4 d-flex justify-content-between">
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h2 data-aos="fade-up">Reliable Car Transport You Can Count On</h2>
+                    <h2 data-aos="fade-up">Driven to Deliver. Built to Move.</h2>
                     <p data-aos="fade-up" data-aos-delay="100">
-                    Experience hassle-free vehicle delivery with our trusted car shipping solutions. From doorstep pickup to on-time drop-off, we ensure every mile is handled with care, precision, and dedication. Join thousands who rely on us for secure, smooth, and stress-free transport every time.
+                    Vanguard Leading Brokerage connects America’s freight—one vehicle, one load, one mile at a time.
+                    From car hauling and drive-away services to heavy equipment transport, we power seamless logistics across all 50 states.
                     </p>
 
 
