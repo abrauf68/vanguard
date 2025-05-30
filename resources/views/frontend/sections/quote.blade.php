@@ -131,7 +131,7 @@
                         </div>
 
                         <div class="col-12 text-center">
-                            <button type="submit">CTA, Get a Quote</button>
+                            <button type="submit">Get a Quote</button>
                         </div>
 
                     </div>
