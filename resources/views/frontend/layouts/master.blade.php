@@ -75,9 +75,10 @@
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="fas fa-arrow-up"></i></a>
-    <a href="tel:{{ \App\Helpers\Helper::getCompanyPhone() }}" target="_blank" id="whatsapp-btn" class="whatsapp-btn d-flex align-items-center justify-content-center">
-        <i class="fab fa-whatsapp"></i>
+    <a href="tel:{{ \App\Helpers\Helper::getCompanyPhone() }}" id="whatsapp-btn" class="whatsapp-btn d-flex align-items-center justify-content-center">
+        <i class="fas fa-phone"></i>
     </a>
+
 
     <!-- Preloader -->
     <div id="preloader"></div>
