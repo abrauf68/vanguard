@@ -1,4 +1,4 @@
-<!-- Get A Quote Section -->
+<!-- Get Quote Section -->
 <section id="get-a-quote" class="get-a-quote section">
     <div class="container">
         <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
@@ -131,7 +131,7 @@
                         </div>
 
                         <div class="col-12 text-center">
-                            <button type="submit">Get a Quote</button>
+                            <button type="submit">Get Quote</button>
                         </div>
 
                     </div>
@@ -141,4 +141,4 @@
         </div>
     </div>
 </section>
-<!-- /Get A Quote Section -->
+<!-- /Get Quote Section -->

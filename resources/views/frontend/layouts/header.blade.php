@@ -87,7 +87,7 @@
             <i class="mobile-nav-toggle d-xl-none fas fa-bars"></i>
         </nav>
 
-        <a class="btn-getstarted" style="font-size: 12px; white-space: nowrap;" href="{{ route('frontend.get-a-quote') }}">Get a Quote</a>
+        <a class="btn-getstarted" style="font-size: 12px; white-space: nowrap;" href="{{ route('frontend.get-a-quote') }}">Get Quote</a>
 
     </div>
 </header>

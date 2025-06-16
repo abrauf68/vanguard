@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title', 'Get A Quote')
+@section('title', 'Get Quote')
 @section('meta_description', '')
 @section('meta_keywords', '')
 
@@ -10,18 +10,18 @@
 <!-- Page Title -->
 @section('page_title')
     @include('frontend.layouts.partials.page_title', [
-        'title' => 'Get a Quote',
+        'title' => 'Get Quote',
         'description' => 'Request a customized quote by providing your shipment details and we’ll get back to you promptly.',
         'breadcrumbs' => [
             ['name' => 'Home', 'url' => route('frontend.home')],
-            ['name' => 'Get a Quote'],
+            ['name' => 'Get Quote'],
         ],
     ])
 @endsection
 <!-- End Page Title -->
 
 @section('content')
-    <!-- Get A Quote Section -->
+    <!-- Get Quote Section -->
     <section id="get-a-quote" class="get-a-quote section">
         <div class="container">
             <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
@@ -154,7 +154,7 @@
                             </div>
 
                             <div class="col-12 text-center">
-                                <button type="submit">Get a Quote</button>
+                                <button type="submit">Get Quote</button>
                             </div>
 
                         </div>
@@ -164,7 +164,7 @@
             </div>
         </div>
     </section>
-    <!-- /Get A Quote Section -->
+    <!-- /Get Quote Section -->
 
 @endsection
 
